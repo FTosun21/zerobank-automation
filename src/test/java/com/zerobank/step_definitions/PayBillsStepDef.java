@@ -81,14 +81,14 @@ public class PayBillsStepDef {
 
     @Then("Amount input box should be empty")
     public void amount_input_box_should_be_empty() {
-        String box = new PayBillsPage().amountBox.getText();
+        String box = new PayBillsPage().amountBox.getAttribute("value");
         System.out.println("box = " + box);
         Assert.assertTrue(box.isEmpty());
     }
 
     @Then("Date input box should be empty")
     public void date_input_box_should_be_empty() {
-        String box = new PayBillsPage().dateBox.getText();
+        String box = new PayBillsPage().dateBox.getAttribute("value");
         System.out.println("box = " + box);
         Assert.assertTrue(box.isEmpty());
     }

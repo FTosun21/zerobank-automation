@@ -29,10 +29,10 @@ Feature: Pay Bills Page
   Scenario: Invalid amount input
     Given the user logged in with valid credentials
     When the user navigates to "Pay Bills"
-    And the user writes the amount of "as/^^^dgs"
+    And the user writes the amount of "asda^^âf"
     And the user selects the date
     Then Amount input box should be empty
-
+  @wip
   Scenario: Invalid date input
     Given the user logged in with valid credentials
     When the user navigates to "Pay Bills"
